@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Primary */
+  --blue-500: hsl(223, 87%, 63%);
+
+  /* Secondary */
+  --blue-200: hsl(223, 100%, 88%);
+  --red-400: hsl(354, 100%, 66%);
+
+  /* Neutral */
+  --gray-400: hsl(0, 0%, 59%);
+  --blue-950: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+.contenedor {
+  text-align: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  img {
+    width: 100px;
+    height: auto;
+  }
+}
+h1 {
+  color: var(--gray-400);
+  font-weight: 300;
+  margin-top: 2rem;
+  strong {
+    color: var(--blue-950);
+    font-weight: 700;
+  }
+}
+main p {
+  margin-top: 1rem;
+}
+form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  input {
+    height: 50px;
+    border-radius: 40px;
+    border: 2px solid var(--blue-200);
+    padding-left: 2rem;
+    color: var(--blue-950);
+    outline: none;
+  }
+  button {
+    height: 50px;
+  }
+}
+form input::placeholder {
+  color: var(--gray-400);
+}
+main img {
+  margin-top: 2rem;
+}
+main button {
+  border-radius: 40px;
+  border: none;
+  background-color: var(--blue-500);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+main button:hover {
+  filter: brightness(133%);
+}
+footer {
+  margin-top: 2rem;
+  ion-icon {
+    border-radius: 100%;
+    border: 1px solid var(--gray-400);
+    padding: 0.4rem;
+    margin-left: 0.5rem;
+    color: var(--blue-500);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  p {
+    color: var(--gray-400);
+  }
+  .icons {
+    margin-bottom: 2rem;
+  }
+}
+ion-icon:hover {
+  color: white;
+  background-color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+.error-email {
+  border: 2px solid var(--red-400);
+  margin-bottom: 0;
+}
+#error-message {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: var(--red-400);
+  visibility: hidden;
+  font-size: 12px;
+}
+@media (min-width: 700px) {
+  .contenedor {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 1rem;
+    grid-auto-rows: 34px;
+    input{
+      grid-column: 1;
+    }
+    p{
+      font-size: 13px;
+      width: 388px;
+    }
+    button{
+      grid-column: 2;
+    grid-row: 1;
+    }
+  }
+  main img {
+    width: 500px;
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  main img {
+    width: 590px;
+  }
+}
