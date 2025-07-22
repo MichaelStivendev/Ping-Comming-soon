@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MichaelStivendev/Ping-Comming-soon/edit/main/)
+- Solution URL: [Add solution URL here](https://github.com/MichaelStivendev/Ping-Comming-soon)
 - Live Site URL: [Add live site URL here](https://michaelstivendev.github.io/Ping-Comming-soon/)
 
 ## My process
